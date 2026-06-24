@@ -72,7 +72,7 @@
   --ext-border: #dde0ff;
   --ext-text-primary: #1a1b3a;
   --ext-text-secondary: #4b4d72;
-  --ext-accent: #6466f1;
+  --ext-accent: #ff4d00;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -144,6 +144,14 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+  }
+
+  .containerX {
+    @apply relative mx-auto w-full max-w-[1440px] overflow-hidden px-6 sm:px-10 md:px-16;
+  }
+
+  .container2X {
+    @apply relative mx-auto w-full max-w-[1920px] overflow-hidden px-6 sm:px-10 md:px-24 lg:px-32;
   }
 
   body {

@@ -30,7 +30,7 @@ export default function RootLayout({
         inter.variable
       )}
     >
-      <body className="bg-ext-background">
+      <body>
         <ThemeProvider forcedTheme="light">
           <SmoothScroll>
             <Navbar />

@@ -1,12 +1,7 @@
 "use client"
 
-import {
-  IconArrowRight,
-  IconBoxMultiple,
-  IconCircle,
-  IconDiamond,
-  IconTrendingUp,
-} from "@tabler/icons-react"
+import { Button } from "@/components/ui/button"
+import { IconArrowRight } from "@tabler/icons-react"
 import { motion } from "framer-motion"
 import Link from "next/link"
 
@@ -16,97 +11,81 @@ export default function Hero() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
+        staggerChildren: 0.12,
+        delayChildren: 0.15,
       },
     },
   }
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 24 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.7,
+        duration: 0.8,
         ease: [0.16, 1, 0.3, 1] as const,
       },
     },
   }
 
+  const imageVariants = {
+    hidden: { opacity: 0, y: 40, scale: 0.96 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 1.2,
+        ease: [0.16, 1, 0.3, 1] as const,
+        delay: 0.5,
+      },
+    },
+  }
+
   return (
-    <section className="relative w-full overflow-hidden pt-10 pb-16 md:pt-16">
-      <div className="mx-auto max-w-7xl px-6 md:px-12">
+    <section className="relative w-full overflow-hidden bg-white pt-32 pb-20 md:pt-52">
+      <div className="container2X">
+        {/* Main Header/Text content */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-col gap-6 pt-16 md:pt-24"
+          className="flex w-full gap-10 text-left"
         >
-          {/* Heading */}
+          {/* Heading with inline graphics */}
           <motion.h1
             variants={itemVariants}
-            className="max-w-4xl font-sans text-6xl leading-[1.05] font-bold tracking-tight text-[#0f1134] sm:text-6xl md:text-7xl lg:text-[76px]"
+            className="max-w-4xl font-sans text-5xl leading-[1.03] font-semibold tracking-tighter text-neutral-900 sm:text-6xl md:text-8xl"
           >
-            Software That Works <br /> The Way You Think.
+            Crafting{" "}
+            <span className="text-ext-accent">Digital Experiences </span>
+            That Matter
           </motion.h1>
 
-          {/* Subtitle & Contact Us Row */}
-          <motion.div
-            variants={itemVariants}
-            className="mt-4 flex w-full max-w-4xl flex-col justify-between gap-8 md:flex-row md:items-end"
-          >
-            <p className="max-w-lg text-base leading-relaxed font-normal text-slate-500 md:text-lg">
-              Launch stunning, responsive sites without hiring designers or
-              developers — perfect for early-stage startups and growing SaaS
-              companies.
-            </p>
-            <Link
-              href="/contact"
-              className="group inline-flex shrink-0 items-center gap-1.5 pb-1 text-sm font-bold text-slate-900 transition-colors hover:text-indigo-600"
+          <div className="ml-auto w-full max-w-sm">
+            {/* Subtitle */}
+            <motion.p
+              variants={itemVariants}
+              className="mx-auto text-lg leading-relaxed text-neutral-500 md:text-xl"
             >
-              Contact us
-              <IconArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-            </Link>
-          </motion.div>
+              From strategy and design to development and scaling, we create
+              digital products that make an impact.
+            </motion.p>
 
-          {/* Client Logos Strip */}
-          <motion.div
-            variants={itemVariants}
-            className="mt-16 flex w-full flex-wrap items-center justify-between gap-x-12 gap-y-6 border-t border-slate-100/90 pt-8 md:mt-24"
-          >
-            {/* Startup Logo */}
-            <div className="flex items-center gap-2 text-slate-400/70 select-none">
-              <IconTrendingUp className="size-5 stroke-[2]" />
-              <span className="font-sans text-lg font-bold tracking-tight">
-                startup
-              </span>
-            </div>
-
-            {/* Company Logo */}
-            <div className="flex items-center gap-2 text-slate-400/70 select-none">
-              <IconBoxMultiple className="size-5 stroke-[2]" />
-              <span className="font-sans text-lg font-bold tracking-tight">
-                company
-              </span>
-            </div>
-
-            {/* Business Logo */}
-            <div className="flex items-center gap-2 text-slate-400/70 select-none">
-              <IconDiamond className="size-5 stroke-[2]" />
-              <span className="font-sans text-lg font-bold tracking-tight">
-                business
-              </span>
-            </div>
-
-            {/* Agency Logo */}
-            <div className="flex items-center gap-2 text-slate-400/70 select-none">
-              <IconCircle className="size-5 stroke-[2.5]" />
-              <span className="font-sans text-lg font-bold tracking-tight">
-                agency
-              </span>
-            </div>
-          </motion.div>
+            <motion.div variants={itemVariants} className="mt-8">
+              <Button
+                size="lg"
+                asChild
+                className="group flex h-11.5 max-w-max cursor-pointer items-center gap-1.5 rounded-full bg-neutral-900 px-7 text-sm font-semibold text-white shadow-md transition-all hover:bg-neutral-800 hover:shadow-neutral-900/20 active:scale-[0.98]"
+              >
+                <Link href="/pricing">
+                  View Plans
+                  <IconArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+                </Link>
+              </Button>
+            </motion.div>
+          </div>
         </motion.div>
       </div>
     </section>
