@@ -1,11 +1,11 @@
 import Hero from "@/components/pages/home/Hero"
 
-function Pgae() {
+function Page() {
   return (
-    <main>
+    <main className="w-full">
       <Hero />
     </main>
   )
 }
 
-export default Pgae
+export default Page
