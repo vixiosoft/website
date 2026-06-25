@@ -1,5 +1,6 @@
 import ClientLogo from "@/components/pages/home/ClientLogo"
 import Hero from "@/components/pages/home/Hero"
+import Services from "@/components/pages/home/Services"
 import { IMAGES } from "@/constants/assets"
 
 function Page() {
@@ -9,6 +10,7 @@ function Page() {
     <main className="w-full">
       <Hero />
       <ClientLogo />
+      <Services />
     </main>
   )
 }
