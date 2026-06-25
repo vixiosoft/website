@@ -1,8 +1,10 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import { IMAGES } from "@/constants/assets"
 import { IconArrowRight } from "@tabler/icons-react"
 import { motion } from "framer-motion"
+import Image from "next/image"
 import Link from "next/link"
 
 export default function Hero() {
@@ -87,6 +89,7 @@ export default function Hero() {
             </motion.div>
           </div>
         </motion.div>
+       
       </div>
     </section>
   )
