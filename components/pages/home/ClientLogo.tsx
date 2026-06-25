@@ -158,10 +158,10 @@ export default function ClientLogo() {
           </Marquee>
 
           {/* Left Gradient Fade */}
-          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-1/6 bg-gradient-to-r from-white to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-1/6 bg-linear-to-r from-white to-transparent" />
 
           {/* Right Gradient Fade */}
-          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-1/6 bg-gradient-to-l from-white to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-1/6 bg-linear-to-l from-white to-transparent" />
         </div>
       </div>
     </section>
