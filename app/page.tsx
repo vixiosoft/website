@@ -1,18 +1,22 @@
 import ClientLogo from "@/components/pages/home/ClientLogo"
 import Hero from "@/components/pages/home/Hero"
 import Services from "@/components/pages/home/Services"
-import { IMAGES } from "@/constants/assets"
+import Work from "@/components/pages/home/Work"
+import Products from "@/components/pages/home/Products"
+import WhyChooseUs from "@/components/pages/home/WhyChooseUs"
 
 function Page() {
-  const productImages = Object.values(IMAGES)
-
   return (
     <main className="w-full">
       <Hero />
       <ClientLogo />
       <Services />
+      <Work />
+      <Products />
+      <WhyChooseUs />
     </main>
   )
 }
 
 export default Page
+
