@@ -5,6 +5,7 @@ import Work from "@/components/pages/home/Work"
 import Products from "@/components/pages/home/Products"
 import WhyChooseUs from "@/components/pages/home/WhyChooseUs"
 import Testimonials from "@/components/pages/home/Testimonials"
+import FAQ from "@/components/shared/FAQ"
 
 function Page() {
   return (
@@ -16,6 +17,7 @@ function Page() {
       <Products />
       <WhyChooseUs />
       <Testimonials />
+      <FAQ />
     </main>
   )
 }
