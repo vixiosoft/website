@@ -49,9 +49,7 @@ function FAQItemCard({
     <motion.div
       layout
       transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-      className={`overflow-hidden border border-slate-200/60 bg-white shadow-[0_8px_30px_rgba(0,0,0,0.005)] transition-[border-color,box-shadow] duration-300 hover:border-slate-300 hover:shadow-[0_15px_35px_rgba(0,0,0,0.015)] ${
-        isOpen ? "rounded-3xl" : "rounded-full"
-      }`}
+      className="overflow-hidden rounded-3xl border border-slate-200/60 bg-white shadow-[0_8px_30px_rgba(0,0,0,0.005)] transition-[border-color,box-shadow] duration-300 hover:border-slate-300 hover:shadow-[0_15px_35px_rgba(0,0,0,0.015)]"
     >
       {/* Clickable Header */}
       <button
@@ -59,7 +57,7 @@ function FAQItemCard({
         className="flex w-full items-center justify-between px-4 py-3.5 sm:px-6 sm:py-4.5"
       >
         <div className="flex items-center gap-3 sm:gap-4">
-          <div className="flex size-8 shrink-0 items-center justify-center rounded-full bg-slate-50 font-bold text-slate-800 text-xs sm:size-10 sm:text-sm">
+          <div className="flex size-8 shrink-0 items-center justify-center rounded-full bg-slate-50 text-xs font-bold text-slate-800 sm:size-10 sm:text-sm">
             ?
           </div>
           <span className="text-left text-xs font-semibold text-slate-800 sm:text-sm md:text-base">
@@ -95,9 +93,9 @@ function FAQItemCard({
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="px-4 pb-5 pl-15 pr-5 sm:px-6 sm:pb-6 sm:pl-20 sm:pr-8">
+            <div className="px-4 pr-5 pb-5 pl-15 sm:px-6 sm:pr-8 sm:pb-6 sm:pl-20">
               <div className="flex items-start justify-between gap-4 border-t border-slate-100 pt-4 sm:gap-6">
-                <p className="text-xs leading-relaxed text-slate-500 sm:text-[0.92rem] max-w-[85%] md:max-w-[90%]">
+                <p className="max-w-[85%] text-xs leading-relaxed text-slate-500 sm:text-[0.92rem] md:max-w-[90%]">
                   {item.answer}
                 </p>
                 <div className="flex size-7 shrink-0 items-center justify-center rounded-full bg-slate-900 text-white shadow-xs sm:size-10">
