@@ -215,7 +215,7 @@ export default function Products() {
           }}
           className="mb-16 md:mb-20"
         >
-          <span className="font-mono text-xs font-bold tracking-widest text-slate-400 uppercase">
+          <span className="mb-4 inline-flex items-center rounded-full border border-slate-200/80 bg-slate-50 px-3.5 py-1.5 text-[11px] font-medium tracking-widest text-slate-500 uppercase">
             Products
           </span>
           <h2 className="mt-3 max-w-2xl text-3xl font-extrabold tracking-tight text-slate-900 md:text-5xl md:leading-[1.15]">
@@ -268,10 +268,10 @@ export default function Products() {
 
             <Link
               href="/works"
-              className="inline-flex items-center gap-2 rounded-full bg-ext-text-primary px-6 py-3 text-xs font-extrabold tracking-wider text-white uppercase shadow-sm transition-all hover:bg-ext-accent hover:shadow-md active:scale-[0.98] w-fit"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-ext-text-primary px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:bg-ext-accent hover:shadow-md active:scale-[0.98] w-fit"
             >
               <span>See All Products</span>
-              <IconArrowUpRight className="size-3.5" />
+              <IconArrowUpRight className="size-4 stroke-[2.5]" />
             </Link>
           </motion.div>
         </motion.div>

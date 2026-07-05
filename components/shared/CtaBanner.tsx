@@ -101,7 +101,7 @@ export default function CtaBanner() {
             <motion.div variants={itemVariants} className="mt-8">
               <Link
                 href="/contact"
-                className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 px-7 py-3 text-[0.9rem] font-semibold text-white shadow-[0_8px_30px_rgba(99,102,241,0.25)] transition-all duration-300 hover:scale-[1.02] hover:from-violet-500 hover:to-indigo-500 hover:shadow-[0_12px_35px_rgba(99,102,241,0.35)] active:scale-[0.98]"
+                className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 px-7 py-3.5 text-sm font-semibold text-white shadow-[0_8px_30px_rgba(99,102,241,0.25)] transition-all duration-300 hover:scale-[1.02] hover:from-violet-500 hover:to-indigo-500 hover:shadow-[0_12px_35px_rgba(99,102,241,0.35)] active:scale-[0.98]"
               >
                 <span>Get Started</span>
                 <svg

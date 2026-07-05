@@ -132,7 +132,7 @@ function ClientCard({ name, icon: Icon, customIcon, color }: Client) {
 
 export default function ClientLogo() {
   return (
-    <section className="w-full py-16 md:py-20">
+    <section className="w-full py-20 md:py-24 bg-white">
       <div className="containerX">
         {/* Section Header */}
         <div className="mb-10 text-center">

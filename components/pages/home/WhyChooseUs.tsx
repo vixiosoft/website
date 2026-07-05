@@ -97,8 +97,11 @@ export default function WhyChooseUs() {
               transition: { duration: 0.8, ease: transitionEase },
             },
           }}
-          className="mb-16"
+          className="mb-16 flex flex-col items-start"
         >
+          <span className="mb-4 inline-flex items-center rounded-full border border-slate-200/80 bg-slate-50 px-3.5 py-1.5 text-[11px] font-medium tracking-widest text-slate-500 uppercase">
+            Why Choose Us
+          </span>
           <h2 className="max-w-2xl text-3xl font-extrabold tracking-tight text-slate-900 md:text-5xl md:leading-[1.15]">
             Why Partners <br />{" "}
             <span className="text-ext-accent">Choose Us</span>
@@ -141,7 +144,7 @@ export default function WhyChooseUs() {
           <motion.div
             variants={cardVariants}
             whileHover={{ y: -4 }}
-            className="flex items-center justify-between rounded-3xl border border-slate-200/70 bg-white p-5 shadow-[0_8px_30px_rgba(0,0,0,0.015)] transition-[border-color,box-shadow] duration-300 hover:border-slate-300 hover:shadow-[0_15px_35px_rgba(0,0,0,0.03)] md:col-start-2 md:row-span-1 md:row-start-1"
+            className="flex items-center justify-between rounded-3xl border border-slate-200/70 bg-white p-6 shadow-[0_8px_30px_rgba(0,0,0,0.015)] transition-[border-color,box-shadow] duration-300 hover:border-slate-300 hover:shadow-[0_15px_35px_rgba(0,0,0,0.03)] md:col-start-2 md:row-span-1 md:row-start-1"
           >
             <div className="flex -space-x-3.5">
               <div className="flex size-10 items-center justify-center rounded-full border-2 border-white bg-linear-to-tr from-orange-400 to-rose-400 text-[10px] font-bold text-white shadow-xs">
@@ -213,7 +216,7 @@ export default function WhyChooseUs() {
           <motion.div
             variants={cardVariants}
             whileHover={{ y: -4 }}
-            className="group flex flex-col justify-center rounded-3xl border border-slate-200/70 bg-white p-6 shadow-[0_8px_30px_rgba(0,0,0,0.015)] transition-[border-color,box-shadow] duration-300 hover:border-slate-300 hover:shadow-[0_15px_35px_rgba(0,0,0,0.03)] md:col-span-2 md:col-start-2 md:row-span-1 md:row-start-4 md:gap-2"
+            className="group flex flex-col justify-center rounded-3xl border border-slate-200/70 bg-white p-8 shadow-[0_8px_30px_rgba(0,0,0,0.015)] transition-[border-color,box-shadow] duration-300 hover:border-slate-300 hover:shadow-[0_15px_35px_rgba(0,0,0,0.03)] md:col-span-2 md:col-start-2 md:row-span-1 md:row-start-4 md:gap-2"
           >
             <h3 className="text-lg font-bold text-slate-800">
               Tailored Solutions

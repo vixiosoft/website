@@ -34,7 +34,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-white pt-32 pb-16 md:pt-48 md:pb-24">
+    <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-white pt-32 pb-20 md:pt-40 md:pb-28">
       {/* --- 1. BRAND-COLORED GLOWING PILLARS --- */}
       {/* Defined with h-full so percentage heights resolve correctly relative to the entire hero section */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-0 flex h-full w-full items-end">

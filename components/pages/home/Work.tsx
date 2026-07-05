@@ -53,11 +53,11 @@ function WorkCard({ work, index }: { work: WorkItem; index: number }) {
     <motion.div
       variants={cardVariants}
       whileHover="hover"
-      className="group relative aspect-[4/3] w-full rounded-[2rem] duration-500"
+      className="group relative aspect-[4/3] w-full rounded-3xl duration-500"
     >
       <Link href={work.href} className="relative block size-full">
         {/* Work Visual Image Wrapper (rounded to clip zoom effect) */}
-        <div className="absolute inset-0 z-0 size-full overflow-hidden rounded-[2rem]">
+        <div className="absolute inset-0 z-0 size-full overflow-hidden rounded-3xl">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <motion.img
             src={work.image}
@@ -73,7 +73,7 @@ function WorkCard({ work, index }: { work: WorkItem; index: number }) {
         </div>
 
         {/* Card Border Overlay (hides original sharp corners and draws continuous border) */}
-        <div className="pointer-events-none absolute inset-0 z-20 rounded-[2rem] border border-slate-200/80" />
+        <div className="pointer-events-none absolute inset-0 z-20 rounded-3xl border border-slate-200/80" />
 
         {/* Notched Corner Cutout SVG Overlay (covers card border in corner and draws curved border with beautiful gap) */}
         <div className="pointer-events-none absolute right-[-1px] bottom-[-1px] z-30 size-28 select-none">
@@ -145,13 +145,13 @@ export default function Work() {
           className="mb-12 flex flex-col gap-6 md:mb-16 md:flex-row md:items-end md:justify-between"
         >
           <div className="flex flex-col items-start gap-4">
-            <span className="inline-block rounded-full border border-slate-200 bg-white px-4 py-1 text-xs font-semibold tracking-wide text-slate-800 shadow-xs">
+            <span className="mb-4 inline-flex items-center rounded-full border border-slate-200/80 bg-slate-50 px-3.5 py-1.5 text-[11px] font-medium tracking-widest text-slate-500 uppercase">
               Our Work
             </span>
             <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 md:text-5xl">
               Our Latest Work
             </h2>
-            <p className="max-w-[580px] text-sm leading-relaxed text-ext-text-secondary md:text-base">
+            <p className="max-w-[580px] text-sm leading-relaxed text-slate-500 md:text-[0.95rem]">
               Our tailored solutions empower your online presence, ensuring
               growth and success in the digital landscape.
             </p>
@@ -160,7 +160,7 @@ export default function Work() {
           <div className="flex items-end">
             <Link
               href="/works"
-              className="inline-flex items-center gap-2 rounded-full bg-[#1a1b3a] px-6 py-3.5 text-xs font-extrabold tracking-wider text-white uppercase shadow-sm transition-all hover:bg-ext-accent hover:shadow-md active:scale-[0.98]"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-ext-text-primary px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:bg-ext-accent hover:shadow-md active:scale-[0.98]"
             >
               <span>See more</span>
               <IconArrowUpRight className="size-4 stroke-[2.5]" />

@@ -129,7 +129,7 @@ export default function Testimonials() {
           }}
           className="mb-14 flex flex-col items-center text-center"
         >
-          <span className="inline-flex items-center rounded-full border border-emerald-500/20 bg-emerald-50/50 px-3.5 py-1 text-[11px] font-semibold tracking-wider text-emerald-600 uppercase">
+          <span className="inline-flex items-center rounded-full border border-slate-200/80 bg-slate-50 px-3.5 py-1.5 text-[11px] font-medium tracking-widest text-slate-500 uppercase">
             Referral From People
           </span>
           <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-slate-900 md:text-5xl md:leading-[1.2]">

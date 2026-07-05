@@ -241,7 +241,7 @@ export default function Services() {
           className="mb-16 grid grid-cols-1 gap-6 md:grid-cols-12 md:gap-10"
         >
           <div className="md:col-span-5">
-            <span className="mb-3 block text-[11px] font-bold tracking-[0.25em] text-slate-400 uppercase">
+            <span className="mb-4 inline-flex items-center rounded-full border border-slate-200/80 bg-slate-50 px-3.5 py-1.5 text-[11px] font-medium tracking-widest text-slate-500 uppercase">
               Our Service
             </span>
             <h2 className="text-3xl leading-[1.1] font-extrabold tracking-tight text-slate-900 md:text-5xl">

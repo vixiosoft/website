@@ -14,9 +14,9 @@ function Page() {
       <Hero />
       <ClientLogo />
       <Services />
-      <Work />
       <Products />
       <WhyChooseUs />
+      <Work />
       <Testimonials />
       <FAQ />
       <CtaBanner />
