@@ -6,6 +6,7 @@ import Products from "@/components/pages/home/Products"
 import WhyChooseUs from "@/components/pages/home/WhyChooseUs"
 import Testimonials from "@/components/pages/home/Testimonials"
 import FAQ from "@/components/shared/FAQ"
+import CtaBanner from "@/components/shared/CtaBanner"
 
 function Page() {
   return (
@@ -18,6 +19,7 @@ function Page() {
       <WhyChooseUs />
       <Testimonials />
       <FAQ />
+      <CtaBanner />
     </main>
   )
 }
